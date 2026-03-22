@@ -1,0 +1,205 @@
+
+
+NEXT QUESTION : 
+A List is an ordered collection of elements. You can access items using their index.
+
+void main() {
+  List numbers = [10, 20, 30, 20];
+  print(numbers);
+  print(numbers[1]);
+}
+// [10, 20, 30, 20]
+// 20
+
+A Set is a collection of unique elements. It automatically removes duplicate values.
+
+void main() {
+  Set numbers = {10, 20, 30, 20};
+  print(numbers);
+}
+// {10, 20, 30}
+
+
+NEXT QUESTION : 
+A final variable can be set only once, but its value can be determined at runtime.
+
+void main() {
+  final currentTime = DateTime.now();
+  print(currentTime);
+}
+
+Value assigned once
+Value can be determined during program execution (runtime)
+Cannot be reassigned later
+
+A const variable must have a value that is known at compile time.
+
+void main() {
+  const pi = 3.14;
+  print(pi);
+}
+
+Value must be fixed before the program runs
+Known at compile time
+Cannot change
+
+Explain the Code :
+Comments help describe what a part of the code does, 
+making it easier for others (or yourself later) to understand.
+
+// This variable stores the user's age
+int age = 25;
+
+Improve Code Readability : 
+Well-placed comments make programs easier to read and maintain, 
+especially in large projects.
+
+// Calculate the total price
+int total = price * quantity;
+
+Help During Debugging :
+Developers can temporarily disable a line of code using comments 
+while testing.
+
+// print("Debug message");
+
+Provide Documentation :
+Comments can describe functions, classes, or logic, 
+helping other developers understand how to use them.
+
+
+NEXT QUESTION :
+
+The is operator checks whether a variable is of a specific type.
+
+Example
+
+void main() {
+  var num = 25;
+  print(num is int);   // true
+}
+
+Returns true if the variable is the specified type.
+
+The is! operator checks whether a variable is NOT of a specific type.
+
+Example
+
+void main() {
+  var name = "John";
+  print(name is! int);   // true
+}
+
+Returns true if the variable is not the specified type.
+
+The as operator is used for type casting (converting an object to a specific type).
+
+Example
+
+void main() {
+  var value = "Hello";
+  String text = value as String;
+  print(text);
+}
+
+Converts a variable to a specific datatype.
+
+
+NEXT QUESTION : 
+
+The Dart SDK (Software Development Kit) is a set of tools and libraries used 
+to develop applications with the Dart programming language. 
+It provides everything needed to write, compile, run, and debug Dart programs.
+
+The SDK usually includes:
+
+Dart compiler – converts Dart code into machine code or JavaScript
+
+Dart runtime – runs Dart applications
+
+Core libraries – built-in functions and utilities
+
+Development tools – debugging and package management tools
+
+Why do we need the Dart SDK in Flutter development?
+Flutter uses Dart as its programming language
+
+Since Flutter apps are written in Dart, the Dart SDK 
+is required to compile and run the Dart code that makes up a Flutter application.
+
+It compiles code for different platforms
+
+The Dart SDK helps convert Flutter code into native 
+machine code for Android, iOS, web, and desktop applications.
+
+Provides development tools
+
+It includes tools that help with debugging, testing, 
+and managing packages, which are necessary when building Flutter apps.
+
+Simple summary:
+The Dart SDK is a toolkit that allows developers to write, 
+compile, and run Dart programs, and it is required in Flutter 
+development because Flutter apps are built using the Dart language.
+
+
+NEXT QUESTION : 
+
+In Dart, a late variable is a variable that is initialized later, 
+but Dart is told that it will definitely be assigned a value before it is used.
+
+Normally, Dart requires variables to be initialized immediately, 
+but the late keyword delays the initialization.
+
+Example of a late Variable
+void main() {
+  late String name;
+  
+  name = "Ali";   // value assigned later
+  print(name);
+}
+
+Here:
+
+name is declared first
+
+The value is assigned later
+
+Dart allows this because of the late keyword
+
+When Should late Be Used?
+When the value will be initialized later
+
+Use late if you cannot assign the value immediately but will assign it before using it.
+
+Example:
+
+late int age;
+
+void setAge() {
+  age = 20;
+}
+
+When initialization is expensive
+
+Sometimes creating a variable may require heavy 
+computation, so you only want to create it when it is first used.
+
+Example:
+
+late String data = loadLargeData();
+
+The function runs only when data is used.
+
+For variables inside classes (common in Flutter)
+In Flutter, late is often used when a variable 
+will be initialized in methods like initState().
+
+Example:
+
+late String username;
+
+A late variable is a variable whose initialization 
+is delayed but guaranteed to happen before it is used.
+If you use a late variable before assigning a value, 
+Dart will throw a runtime error.

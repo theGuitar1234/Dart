@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - 3rd Question</title>
+</head>
+<body>
+    <p>Modulo Operator Demo</p>
+    <p>% returns the leftover in division</p>
+    <input id="a" type="number" />
+    <input id="b" type="number" />
+    <button onclick="calc()" type="button" role="button">Calculate</button>
+    <p id="result"></p>
+
+    <p>This is a visual JavaScript <strong>demo</strong> of the following code in <b>Dart</b> :</p>
+    <pre>
+        void main() {
+            int a = 10;
+            int b = 3;
+            print(a%b);
+        }
+    </pre>
+
+    <script>
+        const a = document.getElementById("a");
+        const b = document.getElementById("b");
+        const res = document.getElementById("result");
+
+        function calc() {
+            res.textContent = 'result is ' + a.value % b.value;
+        }
+    </script>
+</body>
+</html>
