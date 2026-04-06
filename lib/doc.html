@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - 1st Question</title>
+    <style>
+      :root {
+        --text-color: #000000;
+        --highlight-color: #add8e6;
+        --background-color: #ffffff;
+        --primary-color: #cecece;
+        --secondary-color: #d3d3d3;
+        --border-radius: 0 20px 0 0;
+        --box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+      }
+      html {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 12px;
+        line-height: 1.7;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--background-color);
+      }
+      ul {
+        list-style-type: none;
+      }
+      header {
+        background-color: var(--background-color);
+        width: 100%;
+        padding: 1.5em 1em;
+      }
+      header h1, h3 {
+        font-weight: 100;
+      }
+      main {
+        flex-grow: 1;
+        background:
+          linear-gradient(to right, transparent 0% 14.7%, red 14.7% 15%, transparent 15% 10%),
+          linear-gradient(to bottom, transparent 0 10%, blue 11% 12%, transparent 12% 100%),
+          #f5e4cb;
+        background-size: auto auto, 30px 30px, auto auto;
+        display: flex;
+      }
+      aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color);
+        width: clamp(20vw, 500px, 25vw);
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        height: 100vh;
+        background-color: var(--secondary-color);
+        outline: 1px dotted black;
+        padding: 2px;
+        outline-offset: -5px;
+      }
+      aside nav {
+        height: 100%;
+        width: 100%;
+      }
+      aside nav ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 1em;
+      }
+      aside nav ul li {
+        color: var(--text-color);
+        padding: 0rem 1rem;
+      }
+      aside nav ul li a {
+        color: currentColor;
+        text-decoration: none;
+      }
+      aside nav ul li a:hover {
+        color: var(--highlight-color);
+      }
+      main article {
+        padding: 1em 2.5em;
+      }
+      main article .questions {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+      }
+      main article .questions .question h4{
+        margin-bottom: .7rem;
+      }
+      main article .questions .question p {
+        
+      }
+      main article .questions .question ul {
+        display: flex;
+        flex-direction: column;
+        gap: .7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 align="center">Turan Alizada 684.23e</h1>
+      <h3 align="center">Multi-plaform Programming Quiz</h3>
+    </header>
+    <main>
+      <aside>
+        <nav>
+          <ul>
+            <li>
+              <a href="#first-question">First Question</a>
+            </li>
+            <li>
+              <a href="#second-question">Second Question</a>
+            </li>
+            <li>
+              <a href="#">Third Question</a>
+            </li>
+            <li>
+              <a href="#">Fourth Question</a>
+            </li>
+            <li>
+              <a href="#">Fifth Question</a>
+            </li>
+            <li>
+              <a href="#">Sixth Question</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <article>
+        <div class="questions">
+          <div class="question first-question" id="first-question">
+            <h4 align="left">
+              First Question : Explain two reasons why Flutter is considered a
+              good choice for cross-platform development.
+            </h4>
+            <p>
+              Two reasons why Flutter is considered a good choice for
+              multi-platform development :
+            </p>
+            <ul>
+              <li>
+                <p>
+                  1. Single Codebase for Multiple Platforms Flutter allows
+                  developers to write one codebase that can run on Android, iOS,
+                  web, desktop, and embedded devices. This reduces development
+                  time, cost, and maintenance effort because developers do not
+                  need to write separate apps for each platform.
+                </p>
+              </li>
+              <li>
+                <p>
+                  2. Fast Development with Hot Reload Flutter provides a feature
+                  called Hot Reload, which allows developers to instantly see
+                  changes in the app without restarting it. This speeds up
+                  development, testing, and debugging, making the development
+                  process more efficient.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="question second-question" id="second-question">
+            <h4 align="left">Second Question :</h4>
+            <p>
+              What programming language does Flutter use? Flutter uses the Dart
+              programming language. Why Dart was chosen for Flutter :
+            </p>
+            <ul>
+              <li>
+                <p>
+                  1. High Performance Dart can compile directly to native
+                  machine code, which helps Flutter apps run smoothly with high
+                  performance.
+                </p>
+              </li>
+              <li>
+                <p>
+                  2. Fast Development Features Dart supports features like Hot
+                  Reload, making it easier for developers to quickly test and
+                  update their code.
+                </p>
+              </li>
+              <li>
+                <p>
+                  3. Easy to Learn Dart has a simple syntax similar to languages
+                  like Java and JavaScript, making it relatively easy for
+                  developers to learn.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="question third-question" id="third-question">
+            <h4 align="left">Third Question :</h4>
+            <p>
+              The resulst of the following Dart Code :
+            </p>
+            <pre>
+              void main() {
+                int a = 10;
+                itn b = 3;
+                print(a%b);
+              }
+            </pre>
+            <h5>Answer : </h5>
+            <p><strong>%</strong> is the <strong>modulo operator</strong>. It returns the leftovers in divisions</p>
+            <p><b>Here is a demo on how this operator works : </b></p>
+            <div class="demo">
+              <p>Modulo Operator Demo</p>
+              <p>% returns the leftover in division</p>
+              <input id="a" type="number" />
+              <input id="b" type="number" />
+              <button onclick="calc()" type="button" role="button">Calculate</button>
+              <p id="result"></p>
+            </div>
+          </div>
+          <div class="question fourth-question" id="fourth-question">
+            <h4 align="left">Third Question :</h4>
+            <p>
+              Identify each datatype :
+            </p>
+            <pre>
+              void main() {
+                var name = "Dart";
+                var number = 25;
+                var isActive = true;
+              }
+            </pre>
+            <h5>Answer : </h5>
+            <p>This can be found with the <strong>runtimeType</strong> method</p>
+            <pre>
+              void main {
+                var name = "Dart";
+                var number = 25;
+                var isActive = true;
+
+                print(name.runtimeType);
+                print(number.runtimeType);
+                print(isActive.runtimeType);
+              }
+            </pre>
+            <p>The output will be : String int bool</p>
+          </div>
+          <div class="question fifth-question" id="fifth-question">
+            <h4 align="left">Fifth Question :</h4>
+            <p>
+              What is the difference between List and Set in Dart? :
+            </p>
+            <h5>Answer : </h5>
+            <p>A List is an ordered collection of elements. You can access items using their index.</p>
+            <pre>
+              void main() {
+                List numbers = [10, 20, 30, 20];
+                print(numbers);
+                print(numbers[1]);
+              }
+
+              // Output: 
+              // [10, 20, 30, 20]
+              // 20
+            </pre>
+            <p>A Set is a collection of unique elements. It automatically removes duplicate values.</p>
+            <pre>
+              void main() {
+                Set numbers = {10, 20, 30, 20};
+                print(numbers);
+              }
+
+              // Output : 
+              // {10, 20, 30}
+            </pre>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script>
+        const a = document.getElementById("a");
+        const b = document.getElementById("b");
+        const res = document.getElementById("result");
+
+        function calc() {
+            res.textContent = 'result is ' + a.value % b.value;
+        }
+    </script>
+  </body>
+</html>
