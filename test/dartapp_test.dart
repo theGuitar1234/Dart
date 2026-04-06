@@ -1,4 +1,4 @@
-import '../.dart_tool/dartapp1.dart';
+import '../bin/dartapp1.dart';
 import 'package:test/test.dart';
 
 void main() {
