@@ -49,4 +49,12 @@ void main() {
   if (value is String) {
     print(value.length);
   }
+
+  // If-null operator
+  String? maybeNull; //Allowing to be null
+  print(maybeNull ?? "Fallback");
+
+  // Can be used ternary too
+  String? maybeNull1 = "Thomas";
+  maybeNull1 = maybeNull1 != null ? maybeNull1 : "Fallback";
 }

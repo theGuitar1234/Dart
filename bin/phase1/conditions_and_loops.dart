@@ -15,6 +15,11 @@ void main() {
     print('Invalid Value');
   }
 
+  // Ternary Operator
+  int age = 19;
+  String message = age < 21 ? "You can't drink" : "You can drink";
+  print(message);
+
   for (int i = 0; i<10; i++) {
     print(i);
   }
@@ -81,4 +86,8 @@ void main() {
   String url = 'http://example.com';
 
   assert(url.startsWith('https'), 'URL must start with https');
+
+  int userAge = 19;
+  assert(userAge >= 18);
+  print('User can access the content');
 }

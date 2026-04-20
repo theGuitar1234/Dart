@@ -50,4 +50,7 @@ void main() {
   final finalVariable = "finalValueAtRuntime";
   const constant = "constantVariableAtCompileTime";
   print(finalVariable + ' ' + constant);
+
+  // String formatting
+  print('Name: $name, Age: $age');
 }
