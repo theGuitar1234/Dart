@@ -23,6 +23,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        scroll-behavior: smooth;
       }
       body {
         min-height: 100vh;
@@ -110,6 +111,33 @@
         display: flex;
         flex-direction: column;
         gap: .7rem;
+      }
+      pre {
+        background-color: black;
+        border-radius: 15px;
+        color: #00ff00;
+        padding-left: 1.5em;
+      }
+      .demo {
+        background-color: black;
+        color: #00ff00;
+        border-radius: 15px;
+        padding: .5em;
+      }
+      .demo button {
+        background-color: black;
+        color: #00ff00;
+      }
+      pre, .demo, .demo button {
+        animation: blink 0.05s infinite;
+      }
+      @keyframes blink {
+        0% {
+          color: #000000;
+        }
+        100% {
+          color: #00ff00;
+        }
       }
     </style>
   </head>
@@ -208,11 +236,11 @@
               The resulst of the following Dart Code :
             </p>
             <pre>
-              void main() {
-                int a = 10;
-                itn b = 3;
-                print(a%b);
-              }
+void main() {
+  int a = 10;
+  itn b = 3;
+  print(a%b);
+}
             </pre>
             <h5>Answer : </h5>
             <p><strong>%</strong> is the <strong>modulo operator</strong>. It returns the leftovers in divisions</p>
@@ -232,24 +260,24 @@
               Identify each datatype :
             </p>
             <pre>
-              void main() {
-                var name = "Dart";
-                var number = 25;
-                var isActive = true;
-              }
+void main() {
+  var name = "Dart";
+  var number = 25;
+  var isActive = true;
+}
             </pre>
             <h5>Answer : </h5>
             <p>This can be found with the <strong>runtimeType</strong> method</p>
             <pre>
-              void main {
-                var name = "Dart";
-                var number = 25;
-                var isActive = true;
+void main {
+  var name = "Dart";
+  var number = 25;
+  var isActive = true;
 
-                print(name.runtimeType);
-                print(number.runtimeType);
-                print(isActive.runtimeType);
-              }
+  print(name.runtimeType);
+  print(number.runtimeType);
+  print(isActive.runtimeType);
+}
             </pre>
             <p>The output will be : String int bool</p>
           </div>
@@ -261,25 +289,25 @@
             <h5>Answer : </h5>
             <p>A List is an ordered collection of elements. You can access items using their index.</p>
             <pre>
-              void main() {
-                List numbers = [10, 20, 30, 20];
-                print(numbers);
-                print(numbers[1]);
-              }
+void main() {
+  List numbers = [10, 20, 30, 20];
+  print(numbers);
+  print(numbers[1]);
+}
 
-              // Output: 
-              // [10, 20, 30, 20]
-              // 20
+// Output: 
+// [10, 20, 30, 20]
+// 20
             </pre>
             <p>A Set is a collection of unique elements. It automatically removes duplicate values.</p>
             <pre>
-              void main() {
-                Set numbers = {10, 20, 30, 20};
-                print(numbers);
-              }
+void main() {
+  Set numbers = {10, 20, 30, 20};
+  print(numbers);
+}
 
-              // Output : 
-              // {10, 20, 30}
+// Output : 
+// {10, 20, 30}
             </pre>
           </div>
         </div>
